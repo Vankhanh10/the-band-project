@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    background-color: black;
+    height: 8%;
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+}
+#header .nav{
+    display: flex;
+}
+#header .nav .sub{
+    flex:1;
+}
+#header .nav #search{
+    flex:0;
+}
+#header .nav>li{
+    color: white;
+    display: inline;
+    padding: 15px 20px;
+    height: 8%;
+}
+#header .nav>li:hover {
+    background-color: orangered;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#header .nav .sub{
+ list-style: none;
+ display: flex;
+}
+#header .nav .sub>li{
+    display: inline;
+}
+#header .nav .sub>li>a{
+    display: inline-block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: medium;
+}
+.sub>li>a>i{
+    padding-left: 5px;
+}
+
+#header .nav .sub>li:hover>a{
+    color: black;
+    background-color: rgb(215, 218, 220);
+    opacity: 0.8;
+}
+#header .nav .sub .sub2{
+    list-style: none;
+    background-color: white;
+    width: 120%;
+    display: none;
+    box-shadow: 0.5px 0.5px 15px black;
+}
+#header .nav .sub .sub2 li{
+    width: 100%;
+    padding: 10px 18px ;
+}
+#header .nav .sub .sub2 li a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+#header .nav .sub li:hover .sub2{
+    display: block;
+}
+.sub2 li:hover{
+    background-color:rgb(211, 212, 214) ;
+}
+/* container----------------------------------- */
+#container{
+    height: 100%;
+}
+#container img{
+    height: 100%;
+    width: 100%;
+}
+#container .info{
+    list-style: none;    
+    display: flex;
+    flex-direction: column;
+}
+#container .info  {
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    bottom: 10%;
+}
+#container .info li h1{
+    font-weight: 200;
+    color: rgb(33, 31, 31);
+    font-size: 24px;
+    display: inline-block;
+    color: #fff;
+
+}
+#container .info li h2 {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+    color: rgb(15, 15, 15);
+    display: inline-block;
+    color: #fff;
+
+}
+/* content---------------------------------- */
+#content {
+    display: flex;
+    flex-direction: column;
+    width:61%;
+    height: 100%;
+    align-items: center;
+    margin: 0px auto;
+    padding: 100px 0;
+}
+#content .letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+#content .letter  li> h1, h2, h3{
+    text-decoration: none;
+}
+#content .letter h1{
+    text-transform:uppercase ;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: black;
+}
+#content .letter h2{
+    font-size: medium;
+    opacity: 0.6;
+    margin: 20px 0;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+}
+#content .letter h3{
+    text-align: justify;
+    font-weight: 400;
+    color: black;
+}
+#content .picture {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 100px;
+    justify-content: space-around;
+    width: 100%;
+}
+#content .picture ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content .picture ul a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+}
+#content .picture ul img{
+    height: 50%;
+    border-radius:5% ;
+}
+/* tickets----------------------------------------------- */
+#ticket {
+    height: 50em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ticket .mainticket{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 61%;
+    height: 100%;
+    justify-content: space-around;
+}
+#ticket .mainticket ul{
+    list-style: none;
+}
+#ticket .mainticket .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
+}
+#ticket .mainticket .top h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+#ticket .mainticket .top h2{
+    font-size: large;
+    font-weight: 400;
+    opacity: 0.7;
+    font-style: italic;
+    color: #fff;
+    text-decoration: none;
+}
+#ticket .mainticket .middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 15%;
+    box-shadow: 1px 1px 15px rgb(126, 121, 121);
+}
+#ticket .mainticket .middle .september{
+    border-top: solid rgb(164, 161, 161) 2px;
+    display: flex;
+    border-bottom:solid rgb(164, 161, 161) 1px ;
+}
+#ticket .mainticket .middle .october{
+    display: flex;
+    border-bottom:solid rgb(164, 161, 161) 1px ;
+}
+#ticket .mainticket .middle .november{
+    border-bottom:solid rgb(164, 161, 161) 2px ;
+    display: flex;
+
+}
+#ticket .mainticket .middle h3{
+    color: black;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 0 20px;
+    padding: 5px 0;
+}
+#ticket .mainticket .middle h4{
+    color: #fff;
+    background-color: rgb(255, 55, 0);
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 3px;
+    margin: 5px 0;
+}
+/* bottom tickets */
+#ticket .mainticket .bottom{
+    display: flex;
+    width: 100%;
+    height: 48%;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom:80px ;
+}
+#ticket .mainticket .bottom .box{
+    background-color: #fff;
+    height: 100%;
+    width: 32%;
+    margin: 10px 0;
+}
+#ticket .mainticket .bottom ul img {
+    width: 100%;
+}
+#ticket .mainticket .bottom ul h1{
+    text-transform: capitalize;
+    color: black;
+    margin: 10px 15px;
+    font-size: large;
+
+}
+#ticket .mainticket .bottom ul h2{
+    color: black;
+    font-weight: 400;
+    opacity: 0.6;
+    margin: 10px 15px;
+    font-size: large;
+
+}
+#ticket .mainticket .bottom ul h3{
+    font-weight: 400;
+    color: black;
+    margin: 10px 15px;
+    font-size: large;
+}
+#ticket .mainticket .bottom ul #buytickets{
+    color: #fff;
+    background-color: black;
+    margin: 15px 15px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 15px;
+
+}
+#ticket .mainticket .bottom ul img:hover {
+    cursor: pointer;
+    filter: grayscale(60%);
+    opacity: 0.6;
+}
+#ticket .mainticket .bottom ul #buytickets:hover{
+    background-color: rgb(172, 173, 174);
+    color: black;
+    cursor: pointer;
+}
+/* contact---------------------------------------------- */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px 0;
+    width: 100%;
+}
+#contact .start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+    margin: 20px 0;
+}
+#contact .start h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#contact .start h2{
+    color: black;
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: larger;
+    font-style: italic;
+    margin: 10px 0;
+}
+#contact .maincontact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 62%;
+    justify-content: space-between;
+}
+#contact .maincontact .address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contact .maincontact .address a{
+    color:black;
+    text-decoration: none;
+    font-size: large;
+}
+#contact .maincontact .address a i{
+    margin: 10px 10px 0 0;
+    font-size: large;
+}
+#contact .maincontact .write{
+    display: flex;
+    flex-direction: column;
+}
+[placeholder=Name], [placeholder=Email]{
+    padding: 15px 15px;
+    border:solid 1px rgb(171, 163, 163);
+}
+[placeholder=Message]{
+    padding: 15px 15px;
+    margin: 10px 0;
+    border: solid 1px rgb(171, 163, 163);
+}
+#contact .end{
+    width: 62%;
+    display: flex;
+    justify-content: flex-end;
+}
+#contact .end [value=Send]{
+    padding: 12px 15px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#contact .end [value=Send]:hover{
+    background-color: rgb(176, 176, 177);
+    color: black;
+}
+#contact #map{
+    padding: 100px 0 0 0;
+    width: 100%;
+    filter: grayscale(50%);
+}
+/* footer -------------------------------*/
+#footer{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    align-items: center;
+}
+#footer .icon{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#footer .icon>li>i{
+    color: rgb(95, 93, 93);
+    font-size: x-large;
+    padding: 0 5px;
+}
+#footer .icon li:hover i{
+    cursor: pointer;
+    opacity: 0.9;
+    padding: 0 3px;
+    font-size: 30px;
+}
+#footer .link {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+#footer .link {
+    color: rgb(161, 160, 158);
+}
+#footer .link a{
+    color: rgb(161, 160, 158);
+    padding: 0 5px;
+}
+#footer .link a:hover{
+    font-size: larger;
+}
